@@ -429,8 +429,35 @@ break;
 default:
 
 
+const searchBox =
+document.getElementById(
+"weapon-search"
+);
+
+const searchValue =
+searchBox ?
+searchBox.value.toLowerCase().trim() :
+"";
+
 currentWeapons =
-[...allWeapons];
+allWeapons.filter(weapon => {
+
+const name =
+(weapon.name || "").toLowerCase();
+
+const type =
+(weapon.type || "").toLowerCase();
+
+const obtain =
+(weapon.obtain || "").toLowerCase();
+
+return (
+name.includes(searchValue) ||
+type.includes(searchValue) ||
+obtain.includes(searchValue)
+);
+
+});
 
 
 }
