@@ -214,6 +214,21 @@ nav a:hover {
 
 
 
+.category-buttons button.active {
+
+
+    background:#3b82f6;
+
+    box-shadow:
+    0 0 0 3px #ffd700;
+
+    font-weight:bold;
+
+
+}
+
+
+
 
 
 
@@ -502,109 +517,9 @@ nav {
 
 }
 
-/* =========================
-   GEAR DATABASE FIX
-========================= */
-
-
-#gear-container {
-
-
-    width: 90%;
-
-    max-width: 1200px;
-
-    margin: 40px auto;
-
-    display: grid;
-
-    grid-template-columns:
-    repeat(auto-fit, minmax(260px, 1fr));
-
-    gap: 25px;
-
-    justify-content: center;
-
-}
-
-
-
-
-#gear-container .card {
-
-
-    background: #1f2937;
-
-    color: white;
-
-    border-radius: 15px;
-
-    padding: 25px;
-
-    text-align: center;
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.5);
-
-    transition: 0.25s;
-
-
-}
-
-
-
-#gear-container .card:hover {
-
-
-    transform: translateY(-5px);
-
-}
-
-
-
-#gear-container .card h2 {
-
-
-    color:#60a5fa;
-
-    margin-top:0;
-
-
-}
-
-
-
-#gear-container button {
-
-
-    background:#2563eb;
-
-    color:white;
-
-    border:none;
-
-    padding:10px 20px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-
-}
-
-
-
-#gear-container button:hover {
-
-
-    background:#3b82f6;
-
-
-}
-
 
 /* =========================
-   GEAR FILTER CONTROLS ONLY
+   GEAR FILTER CONTROLS
 ========================= */
 
 
@@ -615,6 +530,8 @@ nav {
     justify-content: center;
 
     align-items: center;
+
+    flex-wrap: wrap;
 
     gap: 15px;
 
@@ -627,11 +544,13 @@ nav {
 .gear-controls input,
 .gear-controls select {
 
-    padding: 10px 15px;
+    padding: 12px;
+
+    width: 260px;
 
     border-radius: 8px;
 
-    border: 1px solid #555;
+    border: none;
 
     font-size: 16px;
 
@@ -669,24 +588,6 @@ nav {
 }
 
 
-
-/* Details button */
-
-.details-button {
-
-    background: #444;
-
-    color: white;
-
-}
-
-
-
-.details-button:hover {
-
-    background: #666;
-
-}
 
 /* =========================
    GEAR PAGE CONTROLS ONLY
@@ -741,47 +642,31 @@ nav {
 
 
 
+.gear-category-button.active {
 
+    background: #2563eb;
 
-/* Search + Sort */
+    box-shadow:
+    0 0 0 3px #ffd700;
 
-.gear-controls {
+    font-weight: bold;
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 15px;
-
-    width: 100%;
-
-    margin-bottom: 30px;
+    opacity: 1;
 
 }
 
 
 
-#gear-search,
-#gear-sort {
 
-    padding: 10px 15px;
 
-    border-radius: 8px;
-
-    border: 1px solid #aaa;
-
-    font-size: 16px;
-
-}
+/* Search + Sort styling handled by .gear-controls above */
 
 
 
 
 
 /* =========================
-   DETAILS BUTTON ONLY
+   DETAILS BUTTON
 ========================= */
 
 
