@@ -92,9 +92,19 @@ error
 function setupCategoryButtons(){
 
 
+const catButtons =
 document
-.querySelectorAll(".blacksmith-category-button")
-.forEach(button => {
+.querySelectorAll(".blacksmith-category-button");
+
+
+catButtons.forEach(button => {
+
+
+if(button.dataset.category === currentCategory){
+
+button.classList.add("active");
+
+}
 
 
 button.onclick=function(){
@@ -106,6 +116,13 @@ this.dataset.category;
 
 currentSubCategory =
 "All";
+
+
+catButtons.forEach(b =>
+b.classList.remove("active")
+);
+
+this.classList.add("active");
 
 
 showCategory(
@@ -306,11 +323,28 @@ document
 
 
 
+if(button.dataset.sub === currentSubCategory){
+
+button.classList.add("active");
+
+}
+
+
+
 button.onclick=function(){
 
 
 currentSubCategory =
 this.dataset.sub;
+
+
+document
+.querySelectorAll(".subcategory-button")
+.forEach(b =>
+b.classList.remove("active")
+);
+
+this.classList.add("active");
 
 
 applyFilters();
@@ -353,6 +387,23 @@ document.getElementById(
 container.innerHTML="";
 
 
+
+
+if(items.length === 0){
+
+container.innerHTML = `
+
+<h2 class="no-results">
+
+No items found
+
+</h2>
+
+`;
+
+return;
+
+}
 
 
 
@@ -907,11 +958,21 @@ displayItems(filtered);
 function setupFilterButtons(){
 
 
+const filterButtons =
 document
 .querySelectorAll(
 ".blacksmith-filter-buttons button"
-)
-.forEach(button=>{
+);
+
+
+filterButtons.forEach(button=>{
+
+
+if(button.dataset.filter === currentCraftFilter){
+
+button.classList.add("active");
+
+}
 
 
 button.onclick=function(){
@@ -921,7 +982,11 @@ currentCraftFilter =
 
 this.dataset.filter;
 
-console.log(currentCraftFilter);
+filterButtons.forEach(b =>
+b.classList.remove("active")
+);
+
+this.classList.add("active");
 
 applyFilters();
 
@@ -1820,20 +1885,7 @@ document
 function canCraft(item){
 
 
-console.log(
-"Checking:",
-item.name,
-item.materials
-);
-
-
-
 if(!item.materials){
-
-console.log(
-"No materials:",
-item.name
-);
 
 return false;
 
@@ -1848,29 +1900,10 @@ let owned = inventory[mat.name] || 0;
 
 
 
-console.log(
-mat.name,
-"Owned:",
-owned,
-"Need:",
-mat.amount
-);
-
-
-
 return owned >= mat.amount;
 
 
-
 });
-
-
-
-console.log(
-item.name,
-"Can craft:",
-result
-);
 
 
 
