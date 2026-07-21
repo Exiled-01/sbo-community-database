@@ -787,7 +787,6 @@ location.hash.substring(1)
 
 
 
-console.log("Looking for:", itemName);
 
 
 
@@ -795,7 +794,6 @@ let cards = document.querySelectorAll(".card");
 
 
 
-console.log("Cards found:", cards.length);
 
 
 
@@ -805,7 +803,6 @@ cards.forEach(card=>{
 if(card.innerText.includes(itemName)){
 
 
-console.log("Found:", card);
 
 
 
