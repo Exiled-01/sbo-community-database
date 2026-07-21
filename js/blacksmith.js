@@ -199,7 +199,9 @@ subs=[
 
 "Rapier",
 
-"Dagger"
+"Dagger",
+
+"Weapon Handle"
 
 ];
 
@@ -220,7 +222,9 @@ subs=[
 
 "Armor",
 
-"Headgear"
+"Lower Headgear",
+
+"Upper Headgear"
 
 ];
 
@@ -237,11 +241,9 @@ subs=[
 
 "All",
 
-"Cosmetic",
+"Headwear",
 
-"3D Overlay",
-
-"Event Item"
+"3D Cosmetic Bundle"
 
 ];
 
@@ -546,84 +548,6 @@ applyFilters();
 }
 
 
-// =========================
-// CRAFT FILTER
-// =========================
-
-
-if(currentCraftFilter === "craftable"){
-
-
-filtered = filtered.filter(item => {
-
-
-return canCraft(item);
-
-
-});
-
-
-}
-
-
-
-
-if(currentCraftFilter === "missing"){
-
-
-filtered = filtered.filter(item => {
-
-
-return !canCraft(item);
-
-
-});
-
-
-}
-
-
-
-
-if(currentCraftFilter === "almost"){
-
-
-filtered = filtered.filter(item => {
-
-
-let missing = 0;
-
-
-item.materials.forEach(mat=>{
-
-
-let owned =
-
-inventory[mat.name] || 0;
-
-
-
-if(owned < mat.amount){
-
-
-missing++;
-
-
-}
-
-
-});
-
-
-
-return missing > 0 && missing <= 2;
-
-
-
-});
-
-
-}
 
 
 
