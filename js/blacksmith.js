@@ -92,9 +92,19 @@ error
 function setupCategoryButtons(){
 
 
+const catButtons =
 document
-.querySelectorAll(".blacksmith-category-button")
-.forEach(button => {
+.querySelectorAll(".blacksmith-category-button");
+
+
+catButtons.forEach(button => {
+
+
+if(button.dataset.category === currentCategory){
+
+button.classList.add("active");
+
+}
 
 
 button.onclick=function(){
@@ -106,6 +116,13 @@ this.dataset.category;
 
 currentSubCategory =
 "All";
+
+
+catButtons.forEach(b =>
+b.classList.remove("active")
+);
+
+this.classList.add("active");
 
 
 showCategory(
@@ -199,7 +216,9 @@ subs=[
 
 "Rapier",
 
-"Dagger"
+"Dagger",
+
+"Weapon Handle"
 
 ];
 
@@ -220,7 +239,9 @@ subs=[
 
 "Armor",
 
-"Headgear"
+"Lower Headgear",
+
+"Upper Headgear"
 
 ];
 
@@ -237,11 +258,9 @@ subs=[
 
 "All",
 
-"Cosmetic",
+"Headwear",
 
-"3D Overlay",
-
-"Event Item"
+"3D Cosmetic Bundle"
 
 ];
 
@@ -304,11 +323,28 @@ document
 
 
 
+if(button.dataset.sub === currentSubCategory){
+
+button.classList.add("active");
+
+}
+
+
+
 button.onclick=function(){
 
 
 currentSubCategory =
 this.dataset.sub;
+
+
+document
+.querySelectorAll(".subcategory-button")
+.forEach(b =>
+b.classList.remove("active")
+);
+
+this.classList.add("active");
 
 
 applyFilters();
@@ -351,6 +387,23 @@ document.getElementById(
 container.innerHTML="";
 
 
+
+
+if(items.length === 0){
+
+container.innerHTML = `
+
+<h2 class="no-results">
+
+No items found
+
+</h2>
+
+`;
+
+return;
+
+}
 
 
 
@@ -546,84 +599,6 @@ applyFilters();
 }
 
 
-// =========================
-// CRAFT FILTER
-// =========================
-
-
-if(currentCraftFilter === "craftable"){
-
-
-filtered = filtered.filter(item => {
-
-
-return canCraft(item);
-
-
-});
-
-
-}
-
-
-
-
-if(currentCraftFilter === "missing"){
-
-
-filtered = filtered.filter(item => {
-
-
-return !canCraft(item);
-
-
-});
-
-
-}
-
-
-
-
-if(currentCraftFilter === "almost"){
-
-
-filtered = filtered.filter(item => {
-
-
-let missing = 0;
-
-
-item.materials.forEach(mat=>{
-
-
-let owned =
-
-inventory[mat.name] || 0;
-
-
-
-if(owned < mat.amount){
-
-
-missing++;
-
-
-}
-
-
-});
-
-
-
-return missing > 0 && missing <= 2;
-
-
-
-});
-
-
-}
 
 
 
@@ -983,11 +958,21 @@ displayItems(filtered);
 function setupFilterButtons(){
 
 
+const filterButtons =
 document
 .querySelectorAll(
 ".blacksmith-filter-buttons button"
-)
-.forEach(button=>{
+);
+
+
+filterButtons.forEach(button=>{
+
+
+if(button.dataset.filter === currentCraftFilter){
+
+button.classList.add("active");
+
+}
 
 
 button.onclick=function(){
@@ -997,7 +982,11 @@ currentCraftFilter =
 
 this.dataset.filter;
 
-console.log(currentCraftFilter);
+filterButtons.forEach(b =>
+b.classList.remove("active")
+);
+
+this.classList.add("active");
 
 applyFilters();
 
@@ -1896,20 +1885,7 @@ document
 function canCraft(item){
 
 
-console.log(
-"Checking:",
-item.name,
-item.materials
-);
-
-
-
 if(!item.materials){
-
-console.log(
-"No materials:",
-item.name
-);
 
 return false;
 
@@ -1924,29 +1900,10 @@ let owned = inventory[mat.name] || 0;
 
 
 
-console.log(
-mat.name,
-"Owned:",
-owned,
-"Need:",
-mat.amount
-);
-
-
-
 return owned >= mat.amount;
 
 
-
 });
-
-
-
-console.log(
-item.name,
-"Can craft:",
-result
-);
 
 
 

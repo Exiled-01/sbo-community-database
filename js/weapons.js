@@ -429,8 +429,35 @@ break;
 default:
 
 
+const searchBox =
+document.getElementById(
+"weapon-search"
+);
+
+const searchValue =
+searchBox ?
+searchBox.value.toLowerCase().trim() :
+"";
+
 currentWeapons =
-[...allWeapons];
+allWeapons.filter(weapon => {
+
+const name =
+(weapon.name || "").toLowerCase();
+
+const type =
+(weapon.type || "").toLowerCase();
+
+const obtain =
+(weapon.obtain || "").toLowerCase();
+
+return (
+name.includes(searchValue) ||
+type.includes(searchValue) ||
+obtain.includes(searchValue)
+);
+
+});
 
 
 }
@@ -469,6 +496,29 @@ document.querySelectorAll(
 
 
 
+const showAll =
+document.getElementById(
+"show-all-weapons"
+);
+
+
+
+function setActive(activeButton){
+
+buttons.forEach(b =>
+b.classList.remove("active")
+);
+
+if(showAll)
+showAll.classList.remove("active");
+
+if(activeButton)
+activeButton.classList.add("active");
+
+}
+
+
+
 buttons.forEach(button => {
 
 
@@ -480,6 +530,8 @@ button.onclick=function(){
 selectedCategory =
 this.dataset.type;
 
+
+setActive(this);
 
 
 displayWeapons();
@@ -496,13 +548,6 @@ displayWeapons();
 
 
 
-const showAll =
-document.getElementById(
-"show-all-weapons"
-);
-
-
-
 if(showAll){
 
 
@@ -513,11 +558,17 @@ showAll.onclick=function(){
 selectedCategory="All";
 
 
+setActive(showAll);
+
+
 displayWeapons();
 
 
 };
 
+
+
+setActive(showAll);
 
 
 }
