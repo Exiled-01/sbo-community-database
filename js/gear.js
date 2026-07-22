@@ -1,13 +1,11 @@
 // =========================
-// WEAPON DATABASE
+// GEAR DATABASE
 // =========================
 
 
-let allWeapons = [];
+let allGear = [];
 
-let currentWeapons = [];
-
-let selectedCategory = "All";
+let currentCategory = "All";
 
 
 
@@ -17,36 +15,51 @@ let selectedCategory = "All";
 // =========================
 
 
-function formatAttack(weapon){
+function formatDefense(item){
 
-if(weapon.scaling && weapon.attackMin !== undefined){
+if(item.scaling && item.defenseMin !== undefined){
 
-return `${weapon.attackMin} - ${weapon.attack}`;
-
-}
-
-return weapon.attack;
+return `${item.defenseMin} - ${item.defense}`;
 
 }
 
-
-function formatLevel(weapon){
-
-if(weapon.scaling && weapon.levelMin !== undefined){
-
-return `${weapon.levelMin} - ${weapon.level}`;
+return item.defense;
 
 }
 
-return weapon.level;
+
+function formatDexterity(item){
+
+if(item.scaling && item.dexterityMin !== undefined){
+
+return `${item.dexterityMin} - ${item.dexterity}`;
 
 }
+
+return item.dexterity;
+
+}
+
+
+function formatGearLevel(item){
+
+if(item.scaling && item.levelMin !== undefined){
+
+return `${item.levelMin} - ${item.level}`;
+
+}
+
+return item.level;
+
+}
+
+let currentGear = [];
 
 
 
 
 // =========================
-// LOAD WEAPONS
+// LOAD GEAR JSON
 // =========================
 
 
@@ -55,21 +68,31 @@ document.addEventListener(
 function(){
 
 
-fetch("data/weapons.json")
+fetch("data/gear.json")
 
 
 .then(response => response.json())
 
 
-.then(data => {
+.then(gear => {
 
 
-allWeapons = data;
-
-currentWeapons = data;
+allGear = gear;
 
 
-displayWeapons();
+showCategory(
+currentCategory
+);
+
+
+
+setupCategoryButtons();
+
+setupSearch();
+
+setupSorting();
+
+setupDetailsButtons();
 
 
 
@@ -80,7 +103,7 @@ displayWeapons();
 
 
 console.error(
-"Weapon loading error:",
+"Gear loading error:",
 error
 );
 
@@ -88,364 +111,7 @@ error
 });
 
 
-
-setupSearch();
-
-setupSorting();
-
-setupCategoryButtons();
-
-setupDetails();
-
-
-
 });
-
-
-
-
-// =========================
-// DISPLAY WEAPONS
-// =========================
-
-
-function displayWeapons(){
-
-
-
-const container =
-document.getElementById(
-"weapon-container"
-);
-
-
-
-container.innerHTML = "";
-
-
-
-let weapons = [...currentWeapons];
-
-
-
-
-
-// CATEGORY FILTER
-
-
-if(selectedCategory !== "All"){
-
-
-weapons =
-weapons.filter(
-weapon =>
-weapon.type === selectedCategory
-);
-
-
-}
-
-
-
-
-
-// EMPTY CHECK
-
-
-if(weapons.length === 0){
-
-
-container.innerHTML = `
-
-<h2 class="no-results">
-
-No weapons found
-
-</h2>
-
-`;
-
-
-return;
-
-
-}
-
-
-
-
-
-// CREATE CARDS
-
-
-
-weapons.forEach(weapon => {
-
-
-
-const card =
-document.createElement("div");
-
-
-card.className =
-"card";
-
-
-
-card.innerHTML = `
-
-
-<h2>
-
-${weapon.name}
-
-</h2>
-
-
-<p>
-
-⚔ Attack:
-${formatAttack(weapon)}
-
-</p>
-
-
-
-<p>
-
-Level:
-${formatLevel(weapon)}
-
-</p>
-
-
-
-<p>
-
-Type:
-${weapon.type}
-
-</p>
-
-
-
-<button
-
-class="details-button"
-
-data-name="${weapon.name}"
-
->
-
-View Details
-
-</button>
-
-
-
-`;
-
-
-
-container.appendChild(card);
-
-
-
-});
-
-
-
-
-
-setupDetails();
-
-
-
-}
-
-
-
-
-
-
-// =========================
-// SEARCH
-// =========================
-
-
-function filterWeaponsBySearch(){
-
-
-const searchBox =
-document.getElementById("weapon-search");
-
-
-const value =
-searchBox ? searchBox.value.toLowerCase().trim() : "";
-
-
-return allWeapons.filter(weapon => {
-
-const name = (weapon.name || "").toLowerCase();
-
-const type = (weapon.type || "").toLowerCase();
-
-const obtain = (weapon.obtain || "").toLowerCase();
-
-return (
-
-name.includes(value)
-
-||
-
-type.includes(value)
-
-||
-
-obtain.includes(value)
-
-);
-
-});
-
-
-}
-
-
-
-
-function applySort(list){
-
-
-const sort =
-document.getElementById("weapon-sort");
-
-
-const value =
-sort ? sort.value : "default";
-
-
-switch(value){
-
-
-case "level-high":
-
-list.sort((a,b)=> b.level-a.level);
-
-break;
-
-
-case "level-low":
-
-list.sort((a,b)=> a.level-b.level);
-
-break;
-
-
-case "attack-high":
-
-list.sort((a,b)=> b.attack-a.attack);
-
-break;
-
-
-case "attack-low":
-
-list.sort((a,b)=> a.attack-b.attack);
-
-break;
-
-
-}
-
-
-}
-
-
-
-
-function refreshWeaponList(){
-
-
-currentWeapons = filterWeaponsBySearch();
-
-
-applySort(currentWeapons);
-
-
-displayWeapons();
-
-
-}
-
-
-
-
-// =========================
-// SEARCH
-// =========================
-
-
-function setupSearch(){
-
-
-const search =
-document.getElementById(
-"weapon-search"
-);
-
-
-if(!search)
-return;
-
-
-search.addEventListener(
-"input",
-function(){
-
-
-refreshWeaponList();
-
-
-});
-
-
-}
-
-
-
-
-// =========================
-// SORTING
-// =========================
-
-
-function setupSorting(){
-
-
-const sort =
-document.getElementById(
-"weapon-sort"
-);
-
-
-if(!sort)
-return;
-
-
-sort.addEventListener(
-"change",
-function(){
-
-
-refreshWeaponList();
-
-
-});
-
-
-}
-
 
 
 
@@ -460,19 +126,13 @@ refreshWeaponList();
 function setupCategoryButtons(){
 
 
-
 const buttons =
-document.querySelectorAll(
-".weapon-category-button"
-);
-
+document
+.querySelectorAll(".gear-category-button");
 
 
 const showAll =
-document.getElementById(
-"show-all-weapons"
-);
-
+document.getElementById("show-all-gear");
 
 
 function setActive(activeButton){
@@ -490,23 +150,32 @@ activeButton.classList.add("active");
 }
 
 
-
 buttons.forEach(button => {
 
 
+if(button.dataset.type === currentCategory){
 
-button.onclick=function(){
+setActive(button);
+
+}
+
+
+button.onclick = function(){
 
 
 
-selectedCategory =
+currentCategory =
 this.dataset.type;
+
 
 
 setActive(this);
 
 
-displayWeapons();
+
+showCategory(
+currentCategory
+);
 
 
 
@@ -517,37 +186,454 @@ displayWeapons();
 });
 
 
-
-
-
 if(showAll){
 
+showAll.onclick = function(){
 
-
-showAll.onclick=function(){
-
-
-selectedCategory="All";
-
+currentCategory = "All";
 
 setActive(showAll);
 
-
-displayWeapons();
-
+showCategory(currentCategory);
 
 };
 
-
-
+if(currentCategory === "All"){
 setActive(showAll);
+}
+
+}
 
 
 }
 
 
 
+
+
+
+
+
+// =========================
+// SHOW CATEGORY
+// =========================
+
+
+function showCategory(category){
+
+
+currentGear =
+category === "All"
+? allGear.slice()
+: allGear.filter(
+item =>
+item.type === category
+);
+
+
+
+applyFilters();
+
+
 }
+
+
+
+
+
+
+
+// =========================
+// DISPLAY GEAR
+// =========================
+
+
+function displayGear(gear){
+
+
+
+const container =
+document.getElementById(
+"gear-container"
+);
+
+
+
+container.innerHTML = "";
+
+
+
+
+if(gear.length === 0){
+
+
+container.innerHTML = `
+
+<h2 class="no-results">
+
+No gear found
+
+</h2>
+
+`;
+
+
+return;
+
+
+}
+
+
+
+
+gear.forEach(item => {
+
+
+
+container.innerHTML += `
+
+
+<div class="card">
+
+
+
+<h2>
+
+${item.name}
+
+</h2>
+
+
+
+
+<p>
+
+🛡 Defense:
+${formatDefense(item)}
+
+</p>
+
+
+
+
+<p>
+
+⚡ Dexterity:
+${formatDexterity(item)}
+
+</p>
+
+
+
+
+<p>
+
+Lv. ${formatGearLevel(item)}
+
+</p>
+
+
+
+
+
+<button
+
+class="details-button"
+
+data-name="${item.name}"
+
+>
+
+View Details
+
+</button>
+
+
+
+</div>
+
+
+`;
+
+
+
+});
+
+
+
+setupDetailsButtons();
+
+
+
+}
+
+
+
+
+
+
+
+
+// =========================
+// SEARCH
+// =========================
+
+
+function setupSearch(){
+
+
+const search =
+document.getElementById(
+"gear-search"
+);
+
+
+
+if(!search)
+return;
+
+
+
+search.addEventListener(
+"input",
+function(){
+
+
+applyFilters();
+
+
+});
+
+
+}
+
+
+
+
+
+
+
+
+
+// =========================
+// SORTING
+// =========================
+
+
+function setupSorting(){
+
+
+
+const sort =
+document.getElementById(
+"gear-sort"
+);
+
+
+
+if(!sort)
+return;
+
+
+
+sort.addEventListener(
+"change",
+function(){
+
+
+applyFilters();
+
+
+});
+
+
+}
+
+
+
+
+
+
+
+
+
+function applyFilters(){
+
+
+
+let filtered =
+[...currentGear];
+
+
+
+const search =
+document
+.getElementById(
+"gear-search"
+)
+.value
+.toLowerCase()
+.trim();
+
+
+
+
+if(search){
+
+
+
+filtered =
+filtered.filter(item =>
+
+
+
+(item.name || "")
+.toLowerCase()
+.includes(search)
+
+
+
+||
+
+
+
+(item.obtain || "")
+.toLowerCase()
+.includes(search)
+
+
+
+);
+
+
+
+}
+
+
+
+
+
+
+const sort =
+document
+.getElementById(
+"gear-sort"
+)
+.value;
+
+
+
+
+
+
+switch(sort){
+
+
+
+case "level-high":
+
+
+filtered.sort(
+(a,b)=>
+b.level-a.level
+);
+
+
+break;
+
+
+
+
+case "level-low":
+
+
+filtered.sort(
+(a,b)=>
+a.level-b.level
+);
+
+
+break;
+
+
+
+
+
+
+case "defense-high":
+
+
+filtered.sort(
+(a,b)=>
+b.defense-a.defense
+);
+
+
+break;
+
+
+
+
+
+
+case "defense-low":
+
+
+filtered.sort(
+(a,b)=>
+a.defense-b.defense
+);
+
+
+break;
+
+
+
+
+
+
+case "dex-high":
+
+
+filtered.sort(
+(a,b)=>
+b.dexterity-a.dexterity
+);
+
+
+break;
+
+
+
+
+
+
+case "dex-low":
+
+
+filtered.sort(
+(a,b)=>
+a.dexterity-b.dexterity
+);
+
+
+break;
+
+
+}
+
+
+
+
+
+displayGear(filtered);
+
+
+
+}
+
+
+
 
 
 
@@ -559,15 +645,12 @@ setActive(showAll);
 // =========================
 
 
-function setupDetails(){
+function setupDetailsButtons(){
 
 
 
 document
-.querySelectorAll(
-".details-button"
-)
-
+.querySelectorAll(".details-button")
 .forEach(button => {
 
 
@@ -576,16 +659,16 @@ button.onclick=function(){
 
 
 
-const weapon =
-allWeapons.find(
+const gear =
+allGear.find(
 item =>
 item.name === this.dataset.name
 );
 
 
 
-showWeaponDetails(
-weapon
+showGearDetails(
+gear
 );
 
 
@@ -599,6 +682,7 @@ weapon
 
 
 }
+
 
 
 
@@ -612,77 +696,90 @@ weapon
 // =========================
 
 
-function showWeaponDetails(weapon){
+function showGearDetails(item){
 
 
 
 const box =
 document.getElementById(
-"weapon-details-box"
+"gear-details-box"
 );
 
 
 
 const content =
 document.getElementById(
-"weapon-details-content"
+"gear-details-content"
 );
 
-
-
-if(!weapon)
-return;
 
 
 
 content.innerHTML = `
 
 
+
 <h2>
 
-${weapon.name}
+${item.name}
 
 </h2>
 
 
 
+
 <p>
 
-⚔ Attack:
-${formatAttack(weapon)}
+Type:
+
+${item.type}
 
 </p>
 
 
 
-<p>
-
-Level Requirement:
-${formatLevel(weapon)}
-
-</p>
-
-
-${weapon.scaling ? `<p class="scaling-note">📈 Stats scale with player level</p>` : ""}
-
-
 
 <p>
 
-Weapon Type:
-${weapon.type}
+Level:
+
+${formatGearLevel(item)}
 
 </p>
 
 
 
+
 <p>
 
-How To Obtain:
+Defense:
 
-<br>
+${formatDefense(item)}
 
-${weapon.obtain}
+</p>
+
+
+
+
+<p>
+
+Dexterity:
+
+${formatDexterity(item)}
+
+</p>
+
+
+${item.scaling ? `<p class="scaling-note">📈 Stats scale with player level</p>` : ""}
+
+
+
+
+<p>
+
+How to Obtain:
+
+${item.obtain}
 
 </p>
 
@@ -706,6 +803,7 @@ box.style.display =
 
 
 
+
 // =========================
 // CLOSE POPUP
 // =========================
@@ -718,16 +816,17 @@ function(event){
 
 
 if(
-event.target.id ===
-"close-details"
-
+event.target.id === "close-details"
 ){
 
 
-document.getElementById(
-"weapon-details-box"
-).style.display =
-"none";
+
+document
+.getElementById(
+"gear-details-box"
+)
+.style.display="none";
+
 
 
 }
