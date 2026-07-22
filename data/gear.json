@@ -460,168 +460,252 @@
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Thanksgiving Event: Fall Magic Shroom [2021 - 2022 Only]"
+  "dexterity": 1069.0,
+  "obtain": "Thanksgiving Event: Fall Magic Shroom [2021 - 2022 Only]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Midnight Combat Armor",
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Floor 1 Starter Shop, Requires Beta Tester Badge"
+  "dexterity": 1069.0,
+  "obtain": "Floor 1 Starter Shop, Requires Beta Tester Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Spriggan Knight Armor",
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Floor 1 Starter Shop, Requires 5K Likes Badge"
+  "dexterity": 1069.0,
+  "obtain": "Floor 1 Starter Shop, Requires 5K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Ordinal Scale Armor",
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Floor 1 Starter Shop, Requires 10K Likes Badge"
+  "dexterity": 1069.0,
+  "obtain": "Floor 1 Starter Shop, Requires 10K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Elf Outfit",
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Christmas Event: Christmas Shop"
+  "dexterity": 1069.0,
+  "obtain": "Christmas Event: Christmas Shop",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Santa Outfit",
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Christmas Event: Christmas Shop"
+  "dexterity": 1069.0,
+  "obtain": "Christmas Event: Christmas Shop",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Ms Santa Outfit",
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Christmas Event: Christmas Shop"
+  "dexterity": 1069.0,
+  "obtain": "Christmas Event: Christmas Shop",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Akumu Cloak",
   "type": "Armor",
   "level": 135,
   "defense": 198.5,
-  "dexterity": 1018,
-  "obtain": "Halloween Event: Cursed Wolfpack Leader [2021 Only]"
+  "dexterity": 1018.0,
+  "obtain": "Halloween Event: Cursed Wolfpack Leader [2021 Only]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Pilgrim Heavy Armor",
   "type": "Armor",
   "level": 140,
   "defense": 208.5,
-  "dexterity": 1069,
-  "obtain": "Thanksgiving Event: Father Shroom [2021 Only], Grandfather Shroom [2022 Only]"
+  "dexterity": 1069.0,
+  "obtain": "Thanksgiving Event: Father Shroom [2021 Only], Grandfather Shroom [2022 Only]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Festive Kimono",
   "type": "Armor",
   "level": 148,
   "defense": 224.5,
-  "dexterity": 1152,
-  "obtain": "Floor 1 Starter Shop, Requires 7 Million Visits / 100 Thousand Favorites Badge"
+  "dexterity": 1152.0,
+  "obtain": "Floor 1 Starter Shop, Requires 7 Million Visits / 100 Thousand Favorites Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Silica Attire",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Beast Tamer Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Beast Tamer Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0.5,
+  "dexterityMin": 3.0
  },
  {
   "name": "Blue Swordsman Outfit",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Blue Swordsman Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Blue Swordsman Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Field Heavy Armor",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Veteran Merchant Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Veteran Merchant Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Novice Heavy Armor",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Veteran Merchant Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Veteran Merchant Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Red Samurai Armor",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Red Samurai Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Red Samurai Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Kamakura Combat Armor",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Red Samurai Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Red Samurai Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Sinon Attire VI",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Sharp Shooter Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Sharp Shooter Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Lisbeth Attire",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Master Blacksmith Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Master Blacksmith Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Blood Enforcer VI",
   "type": "Armor",
   "level": 150,
-  "defense": 229,
-  "dexterity": 1173,
-  "obtain": "Floor 1 Starter Shop, Requires Blood Enforcer Gamepass"
+  "defense": 229.0,
+  "dexterity": 1173.0,
+  "obtain": "Floor 1 Starter Shop, Requires Blood Enforcer Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Blackwyrm Coat VI",
   "type": "Armor",
   "level": 160,
   "defense": 249.5,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Black Swordsman Gamepass"
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Black Swordsman Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Grandmaster Armor",
   "type": "Armor",
   "level": 160,
-  "defense": 279,
-  "dexterity": 1279,
-  "obtain": "Floor 1 Starter Shop, Requires Grandmaster Liberator Gamepass"
+  "defense": 279.0,
+  "dexterity": 1279.0,
+  "obtain": "Floor 1 Starter Shop, Requires Grandmaster Liberator Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Wooden Shield",
@@ -1109,7 +1193,11 @@
   "level": 150,
   "defense": 137.4,
   "dexterity": 0,
-  "obtain": "Easter Event: Demented Bunny"
+  "obtain": "Easter Event: Demented Bunny",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0.6,
+  "dexterityMin": 0
  },
  {
   "name": "Liberator Shield",
@@ -1117,7 +1205,11 @@
   "level": 160,
   "defense": 167.4,
   "dexterity": 0,
-  "obtain": "Floor 1 Starter Shop, Requires Grandmaster Liberator Gamepass"
+  "obtain": "Floor 1 Starter Shop, Requires Grandmaster Liberator Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0.6,
+  "dexterityMin": 0
  },
  {
   "name": "Coned Helmet",
@@ -1404,120 +1496,180 @@
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Grim"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Grim",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Jack",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Plump Jack",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Citrus Jack",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Crimson Jack",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Sunshine Jack",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Blackshine Jack",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Bonnzskull",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Hallows Garbera",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Halloween Event: Event Drop [2020 - 2021]"
+  "dexterity": 357.0,
+  "obtain": "Halloween Event: Event Drop [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Top Hat",
   "type": "Upper Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Christmas Event: Snowman"
+  "dexterity": 357.0,
+  "obtain": "Christmas Event: Snowman",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Santa Red Hat",
   "type": "Upper Gear",
   "level": 150,
   "defense": 0,
-  "dexterity": 391,
-  "obtain": "Christmas Event: Renegade Saint Nick"
+  "dexterity": 391.0,
+  "obtain": "Christmas Event: Renegade Saint Nick",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Santa Green Hat",
   "type": "Upper Gear",
   "level": 175,
   "defense": 0,
-  "dexterity": 481,
-  "obtain": "Christmas Event: Perfidious Krampus, Krampus"
+  "dexterity": 481.0,
+  "obtain": "Christmas Event: Perfidious Krampus, Krampus",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Antlers",
   "type": "Upper Gear",
   "level": 190,
   "defense": 0,
-  "dexterity": 538,
-  "obtain": "Christmas Event: Perfidious Krampus, Krampus"
+  "dexterity": 538.0,
+  "obtain": "Christmas Event: Perfidious Krampus, Krampus",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Head of Pengonis",
   "type": "Upper Gear",
   "level": 200,
   "defense": 0,
-  "dexterity": 576,
-  "obtain": "Hellscape Event, Halloween Event: Slime Lord Pengonis [2020 - 2021]"
+  "dexterity": 576.0,
+  "obtain": "Hellscape Event, Halloween Event: Slime Lord Pengonis [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Head of Skaal",
   "type": "Upper Gear",
   "level": 225,
   "defense": 0,
-  "dexterity": 675,
-  "obtain": "Hellscape Event, Halloween Event: Skaal the Undead Penguin Lord [2020 - 2021]"
+  "dexterity": 675.0,
+  "obtain": "Hellscape Event, Halloween Event: Skaal the Undead Penguin Lord [2020 - 2021]",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Snowflake Necklace",
@@ -1764,16 +1916,24 @@
   "type": "Lower Gear",
   "level": 140,
   "defense": 0,
-  "dexterity": 357,
-  "obtain": "Christmas Event: Snowman"
+  "dexterity": 357.0,
+  "obtain": "Christmas Event: Snowman",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Grandmaster Mantle",
   "type": "Lower Gear",
   "level": 160,
   "defense": 0,
-  "dexterity": 427,
-  "obtain": "Floor 1 Shop, Requires Grandmaster Liberator Gamepass"
+  "dexterity": 427.0,
+  "obtain": "Floor 1 Shop, Requires Grandmaster Liberator Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0,
+  "dexterityMin": 1.0
  },
  {
   "name": "Beginner Armor",
@@ -1869,7 +2029,11 @@
   "level": 150,
   "defense": 241.5,
   "dexterity": 1173.0,
-  "obtain": "Floor 1 Shop, Requires Integrity Petal Gamepass"
+  "obtain": "Floor 1 Shop, Requires Integrity Petal Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 1.0,
+  "dexterityMin": 5.0
  },
  {
   "name": "Integrity Petal Shield",
@@ -1877,7 +2041,11 @@
   "level": 150,
   "defense": 144.9,
   "dexterity": 0,
-  "obtain": "Floor 1 Shop, Requires Integrity Petal Gamepass"
+  "obtain": "Floor 1 Shop, Requires Integrity Petal Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "defenseMin": 0.6,
+  "dexterityMin": 0
  },
  {
   "name": "Midnight Platemail",
