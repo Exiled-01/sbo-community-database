@@ -240,61 +240,24 @@ setupDetails();
 // =========================
 
 
-function setupSearch(){
+function filterWeaponsBySearch(){
 
 
-
-const search =
-document.getElementById(
-"weapon-search"
-);
-
-
-
-if(!search)
-return;
-
-
-
-
-search.addEventListener(
-"input",
-function(){
-
+const searchBox =
+document.getElementById("weapon-search");
 
 
 const value =
-this.value
-.toLowerCase()
-.trim();
+searchBox ? searchBox.value.toLowerCase().trim() : "";
 
 
+return allWeapons.filter(weapon => {
 
+const name = (weapon.name || "").toLowerCase();
 
+const type = (weapon.type || "").toLowerCase();
 
-currentWeapons =
-allWeapons.filter(
-weapon => {
-
-
-
-const name =
-(weapon.name || "")
-.toLowerCase();
-
-
-
-const type =
-(weapon.type || "")
-.toLowerCase();
-
-
-
-const obtain =
-(weapon.obtain || "")
-.toLowerCase();
-
-
+const obtain = (weapon.obtain || "").toLowerCase();
 
 return (
 
@@ -310,25 +273,111 @@ obtain.includes(value)
 
 );
 
+});
 
 
 }
 
-);
 
+
+
+function applySort(list){
+
+
+const sort =
+document.getElementById("weapon-sort");
+
+
+const value =
+sort ? sort.value : "default";
+
+
+switch(value){
+
+
+case "level-high":
+
+list.sort((a,b)=> b.level-a.level);
+
+break;
+
+
+case "level-low":
+
+list.sort((a,b)=> a.level-b.level);
+
+break;
+
+
+case "attack-high":
+
+list.sort((a,b)=> b.attack-a.attack);
+
+break;
+
+
+case "attack-low":
+
+list.sort((a,b)=> a.attack-b.attack);
+
+break;
+
+
+}
+
+
+}
+
+
+
+
+function refreshWeaponList(){
+
+
+currentWeapons = filterWeaponsBySearch();
+
+
+applySort(currentWeapons);
 
 
 displayWeapons();
 
 
+}
+
+
+
+
+// =========================
+// SEARCH
+// =========================
+
+
+function setupSearch(){
+
+
+const search =
+document.getElementById(
+"weapon-search"
+);
+
+
+if(!search)
+return;
+
+
+search.addEventListener(
+"input",
+function(){
+
+
+refreshWeaponList();
+
 
 });
 
 
-
 }
-
-
 
 
 
@@ -341,18 +390,14 @@ displayWeapons();
 function setupSorting(){
 
 
-
 const sort =
 document.getElementById(
 "weapon-sort"
 );
 
 
-
 if(!sort)
 return;
-
-
 
 
 sort.addEventListener(
@@ -360,116 +405,10 @@ sort.addEventListener(
 function(){
 
 
-
-let value =
-this.value;
-
-
-
-
-switch(value){
-
-
-
-case "level-high":
-
-
-currentWeapons.sort(
-(a,b)=>
-b.level-a.level
-);
-
-
-break;
-
-
-
-
-case "level-low":
-
-
-currentWeapons.sort(
-(a,b)=>
-a.level-b.level
-);
-
-
-break;
-
-
-
-
-case "attack-high":
-
-
-currentWeapons.sort(
-(a,b)=>
-b.attack-a.attack
-);
-
-
-break;
-
-
-
-
-case "attack-low":
-
-
-currentWeapons.sort(
-(a,b)=>
-a.attack-b.attack
-);
-
-
-break;
-
-
-
-default:
-
-
-const searchBox =
-document.getElementById(
-"weapon-search"
-);
-
-const searchValue =
-searchBox ?
-searchBox.value.toLowerCase().trim() :
-"";
-
-currentWeapons =
-allWeapons.filter(weapon => {
-
-const name =
-(weapon.name || "").toLowerCase();
-
-const type =
-(weapon.type || "").toLowerCase();
-
-const obtain =
-(weapon.obtain || "").toLowerCase();
-
-return (
-name.includes(searchValue) ||
-type.includes(searchValue) ||
-obtain.includes(searchValue)
-);
-
-});
-
-
-}
-
-
-
-displayWeapons();
-
+refreshWeaponList();
 
 
 });
-
 
 
 }
