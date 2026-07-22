@@ -850,85 +850,121 @@
   "name": "Purple Death",
   "type": "1 Handed",
   "level": 270,
-  "attack": 1375,
-  "obtain": "Floor 1 Shop, Requires 1K Likes Badge"
+  "attack": 1528.0,
+  "obtain": "Floor 1 Shop, Requires 1K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.4
  },
  {
   "name": "Ordinal Scale Sword",
   "type": "1 Handed",
   "level": 270,
-  "attack": 1528,
-  "obtain": "Floor 1 Shop, Requires 10K Likes Badge"
+  "attack": 1528.0,
+  "obtain": "Floor 1 Shop, Requires 10K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.4
  },
  {
   "name": "Ascending Blade",
   "type": "1 Handed",
   "level": 270,
-  "attack": 1528,
-  "obtain": "Floor 1 Shop, Requires 2 Million Visits Badge"
+  "attack": 1528.0,
+  "obtain": "Floor 1 Shop, Requires 2 Million Visits Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.4
  },
  {
   "name": "Lighted Fir Blade",
   "type": "1 Handed",
   "level": 270,
-  "attack": 1528,
-  "obtain": "Christmas Event: Christmas Shop [2020 - 2022]"
+  "attack": 1528.0,
+  "obtain": "Christmas Event: Christmas Shop [2020 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.4
  },
  {
   "name": "Silver Beater 1H",
   "type": "1 Handed",
   "level": 270,
-  "attack": 1535,
-  "obtain": "Floor 1 Shop, Requires Beater Badge"
+  "attack": 1535.0,
+  "obtain": "Floor 1 Shop, Requires Beater Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 5.6
  },
  {
   "name": "Victorious Blade",
   "type": "1 Handed",
   "level": 275,
-  "attack": 1567,
-  "obtain": "Floor 1 Shop, Requires 25K Likes Badge"
+  "attack": 1567.0,
+  "obtain": "Floor 1 Shop, Requires 25K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Webripper",
   "type": "1 Handed",
   "level": 280,
-  "attack": 1606,
-  "obtain": "Halloween Event: Halloween Shop [2021 - 2022]"
+  "attack": 1606.0,
+  "obtain": "Halloween Event: Halloween Shop [2021 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Crescent Blood Moon Bayonet",
   "type": "1 Handed",
   "level": 280,
-  "attack": 1606,
-  "obtain": "Halloween Event: Halloween Shop/Boss Drop/Blacksmithing [2022 - 2023]"
+  "attack": 1606.0,
+  "obtain": "Halloween Event: Halloween Shop/Boss Drop/Blacksmithing [2022 - 2023]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Wishbone",
   "type": "1 Handed",
   "level": 290,
-  "attack": 1685,
-  "obtain": "Thanksgiving Event: Thanksgiving Shop [2021 - 2022]"
+  "attack": 1685.0,
+  "obtain": "Thanksgiving Event: Thanksgiving Shop [2021 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Turkish Axe",
   "type": "1 Handed",
   "level": 295,
-  "attack": 1725,
-  "obtain": "Thanksgiving Event: \u00abKufuku no Toruko\u00bb [2020]"
+  "attack": 1725.0,
+  "obtain": "Thanksgiving Event: \u00abKufuku no Toruko\u00bb [2020]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Rabbit Fang",
   "type": "1 Handed",
   "level": 295,
-  "attack": 1725,
-  "obtain": "Easter Event: Easter Shop [2022]"
+  "attack": 1725.0,
+  "obtain": "Easter Event: Easter Shop [2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Christmas Blade",
   "type": "1 Handed",
   "level": 305,
-  "attack": 1805,
-  "obtain": "Christmas Event: Christmas Shop [2021 - 2022]"
+  "attack": 1805.0,
+  "obtain": "Christmas Event: Christmas Shop [2021 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Lovers Edge (All Colors)",
@@ -941,43 +977,61 @@
   "name": "Master Smiths Mace",
   "type": "1 Handed",
   "level": 310,
-  "attack": 1846,
-  "obtain": "Floor 1 Shop, Requires Master Blacksmith Gamepass"
+  "attack": 1846.0,
+  "obtain": "Floor 1 Shop, Requires Master Blacksmith Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.4
  },
  {
   "name": "Karakurenai",
   "type": "1 Handed",
   "level": 310,
-  "attack": 1846,
-  "obtain": "Floor 1 Shop, Requires Red Samurai Gamepass"
+  "attack": 1846.0,
+  "obtain": "Floor 1 Shop, Requires Red Samurai Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.4
  },
  {
   "name": "Elucidator VI",
   "type": "1 Handed",
   "level": 310,
-  "attack": 1862,
-  "obtain": "Floor 1 Shop, Requires Black Swordsman Gamepass"
+  "attack": 1862.0,
+  "obtain": "Floor 1 Shop, Requires Black Swordsman Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 5.4
  },
  {
   "name": "Blue Rose Sword",
   "type": "1 Handed",
   "level": 310,
-  "attack": 1862,
-  "obtain": "Floor 1 Shop, Requires Blue Swordsman Gamepass"
+  "attack": 1862.0,
+  "obtain": "Floor 1 Shop, Requires Blue Swordsman Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 5.4
  },
  {
   "name": "Clover Blade",
   "type": "1 Handed",
   "level": 310,
-  "attack": 1846,
-  "obtain": "Saint Patricks Event: Saint Patrick's Day Shop [2023, 2024]"
+  "attack": 1846.0,
+  "obtain": "Saint Patricks Event: Saint Patrick's Day Shop [2023, 2024]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Liberator Sword",
   "type": "1 Handed",
   "level": 310,
-  "attack": 1843,
-  "obtain": "Floor 1 Shop, Requires Grandmaster Liberator Gamepass"
+  "attack": 1843.0,
+  "obtain": "Floor 1 Shop, Requires Grandmaster Liberator Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.4
  },
  {
   "name": "Iron Greatsword",
@@ -1753,57 +1807,81 @@
   "name": "The Monolith",
   "type": "2 Handed",
   "level": 270,
-  "attack": 1910,
-  "obtain": "Floor 1 Shop, Requires 5K Likes Badge"
+  "attack": 1910.0,
+  "obtain": "Floor 1 Shop, Requires 5K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Grimms Scythe",
   "type": "2 Handed",
   "level": 270,
-  "attack": 1910,
-  "obtain": "Halloween Event: \u00abGrim\u00bb"
+  "attack": 1910.0,
+  "obtain": "Halloween Event: \u00abGrim\u00bb",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Wreath Buster",
   "type": "2 Handed",
   "level": 270,
-  "attack": 1910,
-  "obtain": "Christmas Event: Christmas Shop [2020 - 2022]"
+  "attack": 1910.0,
+  "obtain": "Christmas Event: Christmas Shop [2020 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Silver Beater 2H",
   "type": "2 Handed",
   "level": 270,
-  "attack": 1919,
-  "obtain": "Floor 1 Shop, Requires Beater Badge"
+  "attack": 1919.0,
+  "obtain": "Floor 1 Shop, Requires Beater Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 5.0
  },
  {
   "name": "Victorious Claymore",
   "type": "2 Handed",
   "level": 275,
-  "attack": 1958,
-  "obtain": "Floor 1 Shop, Requires 25K Likes Badge"
+  "attack": 1958.0,
+  "obtain": "Floor 1 Shop, Requires 25K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Jackenmoure",
   "type": "2 Handed",
   "level": 280,
-  "attack": 2007,
-  "obtain": "Halloween Event: Halloween Shop [2021 - 2022]"
+  "attack": 2007.0,
+  "obtain": "Halloween Event: Halloween Shop [2021 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Crescent Blood Moon Halberd",
   "type": "2 Handed",
   "level": 280,
-  "attack": 2007,
-  "obtain": "Halloween Event: Halloween Shop/Boss Drop/Blacksmithing [2022 - 2023]"
+  "attack": 2007.0,
+  "obtain": "Halloween Event: Halloween Shop/Boss Drop/Blacksmithing [2022 - 2023]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Scorched Crucible Backsword",
   "type": "2 Handed",
   "level": 285,
-  "attack": 2056,
-  "obtain": "Halloween Event: \u00abOne-Eyed Spirit\u00bb"
+  "attack": 2056.0,
+  "obtain": "Halloween Event: \u00abOne-Eyed Spirit\u00bb",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Iron Rapier",
@@ -2544,57 +2622,81 @@
   "name": "Candy Cane Rapier",
   "type": "Rapier",
   "level": 270,
-  "attack": 1337,
-  "obtain": "Christmas Event: Christmas Shop [2020 - 2022]"
+  "attack": 1337.0,
+  "obtain": "Christmas Event: Christmas Shop [2020 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Silver Beater Rapier",
   "type": "Rapier",
   "level": 270,
-  "attack": 1343,
-  "obtain": "Floor 1 Starter Shop, Requires Beater Badge"
+  "attack": 1343.0,
+  "obtain": "Floor 1 Starter Shop, Requires Beater Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.6
  },
  {
   "name": "Victorious Rapier",
   "type": "Rapier",
   "level": 275,
-  "attack": 1371,
-  "obtain": "Floor 1 Starter Shop, Requires 25K Likes Badge"
+  "attack": 1371.0,
+  "obtain": "Floor 1 Starter Shop, Requires 25K Likes Badge",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Swiftstroke",
   "type": "Rapier",
   "level": 280,
-  "attack": 1405,
-  "obtain": "Halloween Event: Halloween Shop [2021 - 2022]"
+  "attack": 1405.0,
+  "obtain": "Halloween Event: Halloween Shop [2021 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Crescent Blood Moon Lancer",
   "type": "Rapier",
   "level": 280,
-  "attack": 1405,
-  "obtain": "Halloween Event: Halloween Shop/Boss Drop/Blacksmithing [2022 - 2023]"
+  "attack": 1405.0,
+  "obtain": "Halloween Event: Halloween Shop/Boss Drop/Blacksmithing [2022 - 2023]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Turkey Probe",
   "type": "Rapier",
   "level": 290,
-  "attack": 1474,
-  "obtain": "Thanksgiving Event: Thanksgiving Shop [2021 - 2022]"
+  "attack": 1474.0,
+  "obtain": "Thanksgiving Event: Thanksgiving Shop [2021 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Egg Rapier",
   "type": "Rapier",
-  "level": 295,
-  "attack": 1509,
-  "obtain": "Easter Event: Easter Shop [2022]"
+  "level": 305,
+  "attack": 3.6,
+  "obtain": "Easter Event: Easter Shop [2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Icepick",
   "type": "Rapier",
   "level": 305,
-  "attack": 1579,
-  "obtain": "Christmas Event: Christmas Shop [2021 - 2022]"
+  "attack": 1579.0,
+  "obtain": "Christmas Event: Christmas Shop [2021 - 2022]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Lovers Stiletto (All Colors)",
@@ -2607,15 +2709,21 @@
   "name": "Clover Rapier",
   "type": "Rapier",
   "level": 310,
-  "attack": 1615,
-  "obtain": "Saint Patricks Event: Saint Patrick's Day Shop [2023, 2024]"
+  "attack": 1615.0,
+  "obtain": "Saint Patricks Event: Saint Patrick's Day Shop [2023, 2024]",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Lambent Light VI",
   "type": "Rapier",
   "level": 310,
-  "attack": 1629,
-  "obtain": "Floor 1 Starter Shop, Requires Blood Enforcer Gamepass"
+  "attack": 1629.0,
+  "obtain": "Floor 1 Starter Shop, Requires Blood Enforcer Gamepass",
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Silent Snowpiercer",
@@ -3363,89 +3471,108 @@
   "name": "Coal Dagger",
   "type": "Dagger",
   "level": 270,
-  "attack": 1241,
+  "attack": 1241.0,
   "obtain": "Christmas Event: Christmas Shop [2020 - 2022]",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Silver Beater Dagger",
   "type": "Dagger",
   "level": 270,
-  "attack": 1247,
+  "attack": 1247.0,
   "obtain": "Floor 1 Shop, Requires Beater Badge",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Victorious Dagger",
   "type": "Dagger",
   "level": 275,
-  "attack": 1273,
+  "attack": 1273.0,
   "obtain": "Floor 1 Shop, Requires 25K Likes Badge",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Webcutter",
   "type": "Dagger",
   "level": 280,
-  "attack": 1305,
+  "attack": 1305.0,
   "obtain": "Halloween Event: Halloween Shop [2021 - 2022]",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Crescent Blood Moon Gar",
   "type": "Dagger",
   "level": 280,
-  "attack": 1305,
+  "attack": 1305.0,
   "obtain": "Halloween Event: Halloween Shop/Boss Drop/Blacksmithing [2022 - 2023]",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Carver",
   "type": "Dagger",
   "level": 290,
-  "attack": 1369,
+  "attack": 1369.0,
   "obtain": "Thanksgiving Event: Thanksgiving Shop [2021 - 2022]",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Duck Decimator",
   "type": "Dagger",
   "level": 295,
-  "attack": 1401,
+  "attack": 3.5,
   "obtain": "Easter Event: Easter Shop [2022]",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Peppermint Dagger",
   "type": "Dagger",
-  "level": 305,
-  "attack": 1467,
+  "level": 250,
+  "attack": 1467.0,
   "obtain": "Christmas Event: Christmas Shop [2021 - 2022]",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Lovers Micro Edge (All Colors)",
   "type": "Dagger",
   "level": 305,
   "attack": 1467,
-  "obtain": "Valentines Day Event: Valentines Day Shop [2023, 2024]",
-  "max": true
+  "obtain": "Valentines Day Event: Valentines Day Shop [2023, 2024]"
  },
  {
   "name": "Clover Dagger",
   "type": "Dagger",
   "level": 310,
-  "attack": 1500,
+  "attack": 1500.0,
   "obtain": "Saint Patricks Event: Saint Patrick's Day Shop [2023, 2024]",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Ebon Dagger",
   "type": "Dagger",
   "level": 310,
-  "attack": 1500,
+  "attack": 1500.0,
   "obtain": "Floor 1 Starter Shop, Requires Beast Tamer Gamepass",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 2.5
  },
  {
   "name": "Bell Scythe",
@@ -3453,7 +3580,9 @@
   "level": 305,
   "attack": 2256.0,
   "obtain": "Christmas Event: Holiday Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Clover Greatsword",
@@ -3461,7 +3590,9 @@
   "level": 310,
   "attack": 2307.0,
   "obtain": "Saint Patricks Event: Saint Patrick's Day Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Easter Aeanthicus",
@@ -3616,7 +3747,9 @@
   "level": 310,
   "attack": 2307.0,
   "obtain": "Halloween Event: Blacksmithing",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Frostlit Covenant",
@@ -3659,7 +3792,9 @@
   "level": 290,
   "attack": 2106.0,
   "obtain": "Thanksgiving Event: Thanksgiving Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Ground Gorge",
@@ -3667,7 +3802,9 @@
   "level": 310,
   "attack": 2307.0,
   "obtain": "Floor 1 Shop, Requires Veteran Merchant Gamepass",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Ground Splitter",
@@ -3675,7 +3812,9 @@
   "level": 310,
   "attack": 2307.0,
   "obtain": "Floor 1 Shop, Requires Veteran Merchant Gamepass",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Hecate",
@@ -3683,7 +3822,9 @@
   "level": 310,
   "attack": 2307.0,
   "obtain": "Floor 1 Shop, Requires Sharp Shooter Gamepass",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Integrity Petal Sword",
@@ -3691,7 +3832,9 @@
   "level": 310,
   "attack": 1862.0,
   "obtain": "Floor 1 Shop, Requires Integrity Petal Gamepass",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 5.4
  },
  {
   "name": "Krampus Klaws",
@@ -3699,7 +3842,9 @@
   "level": 320,
   "attack": 2410.0,
   "obtain": "Christmas Event: Perfidious Krampus",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Legendary Malachite Greatsword",
@@ -3714,7 +3859,9 @@
   "level": 305,
   "attack": 1805.0,
   "obtain": "Valentines Day Event: Valentines Day Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.4
  },
  {
   "name": "Lovers Micro Edge",
@@ -3722,7 +3869,9 @@
   "level": 305,
   "attack": 1467.0,
   "obtain": "Valentines Day Event: Valentines Day Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.5
  },
  {
   "name": "Lovers Stiletto",
@@ -3730,7 +3879,9 @@
   "level": 305,
   "attack": 1579.0,
   "obtain": "Valentines Day Event: Valentines Day Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 3.6
  },
  {
   "name": "Matrimonys Sickle",
@@ -3738,7 +3889,9 @@
   "level": 305,
   "attack": 2256.0,
   "obtain": "Valentines Day Event: Valentines Day Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Oathbreaker",
@@ -3753,7 +3906,9 @@
   "level": 295,
   "attack": 2156.0,
   "obtain": "Easter Event: Holiday Shop",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Renegade Saint Axe",
@@ -3761,7 +3916,9 @@
   "level": 300,
   "attack": 2206.0,
   "obtain": "Renegade Saint Nick",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Ruin of the North",
@@ -3797,7 +3954,9 @@
   "level": 310,
   "attack": 2307.0,
   "obtain": "Floor 1 Shop, Requires Veteran Merchant Gamepass",
-  "max": true
+  "scaling": true,
+  "levelMin": 1,
+  "attackMin": 4.0
  },
  {
   "name": "Umbral Fangblade",
