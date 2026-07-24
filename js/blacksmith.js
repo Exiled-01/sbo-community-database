@@ -414,18 +414,11 @@ applyFilters();
 function displayItems(items){
 
 
-
 const container =
 
 document.getElementById(
 "blacksmith-container"
 );
-
-
-
-container.innerHTML="";
-
-
 
 
 if(items.length === 0){
@@ -445,8 +438,14 @@ return;
 }
 
 
+// Build all card markup into an array first, then write to the
+// DOM ONCE at the end. Using container.innerHTML += inside the
+// loop forces the browser to re-serialize and re-parse the
+// entire accumulated HTML on every single iteration (O(n^2) as
+// the item count grows) -- this is what caused the lag while
+// searching/filtering.
 
-items.forEach(item=>{
+const cardsHTML = items.map(item=>{
 
 let status = getCraftStatus(item);
 
@@ -502,7 +501,7 @@ cosmeticInfo += `
 
 }
 
-container.innerHTML += `
+return `
 
 
 
@@ -575,14 +574,13 @@ View Recipe
 
 `;
 
+}).join("");
 
 
-});
-
+container.innerHTML = cardsHTML;
 
 
 setupDetailsButtons();
-
 
 
 }
@@ -616,15 +614,21 @@ if(!search)
 return;
 
 
+// Debounce: wait for a short pause in typing before filtering.
+// Previously this fired a full filter + re-render on every single
+// keystroke, which -- combined with the innerHTML += rebuild in
+// displayItems -- caused the search box to lag badly as the item
+// list grew.
 
+let searchDebounce;
 
 search.addEventListener(
 "input",
 function(){
 
+clearTimeout(searchDebounce);
 
-applyFilters();
-
+searchDebounce = setTimeout(applyFilters, 150);
 
 });
 
